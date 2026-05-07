@@ -78,19 +78,4 @@ Decompiled functions are written as individual `.il` files in the output directo
 
 | Platform | GLIBC | Status |
 |----------|-------|--------|
-| RHEL 8+ / Rocky 8+ | ≥ 2.28 | ✅ Pre-built binary works |
-| Ubuntu 20.04+ | ≥ 2.31 | ✅ Pre-built binary works |
-| RHEL 7 | 2.17 | ⚠️ Build from source (see below) |
-
-### RHEL 7 Build
-
-```bash
-# Requires devtoolset for C++17 support
-yum install devtoolset-11
-scl enable devtoolset-11 bash
-cd /path/to/dskill && bash build.sh
-```
-
-## Implementation
-
-See [PRINCIPLE.md](PRINCIPLE.md) for detailed implementation principles.
+| RHEL 7 | 2.17 | ✅ Pre-built  |
