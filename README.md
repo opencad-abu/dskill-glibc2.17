@@ -1,11 +1,11 @@
-# dskill — Cadence SKILL Decompiler & Decrypt
+# dskill — SKILL Decompiler & Decrypt
 
 **Authors:** 阿布 (Abu) & OCAD  
 **Version:** 1.0.0
 
 ## Overview
 
-dskill is a unified tool for working with Cadence SKILL files:
+dskill is a unified tool for working with SKILL files:
 - **Decrypt** encrypted `.ile` files to readable `.il` source
 - **Decompile** compiled `.cxt` (context) files back to SKILL source code
 
@@ -50,16 +50,16 @@ dskill -V | --version   # Show version
 
 ```bash
 # Decrypt an encrypted SKILL file
-dskill -ile -i tslPostOA.ile -f tslPostOA.il
+dskill -ile -i myFunc.ile -f myFunc.il
 
 # Decompile all functions from a context file
-dskill -cxt -i pdkUtils64bit.cxt -d ./output
+dskill -cxt -i myFunc.cxt -d ./output
 
 # Decompile only 10 functions for quick inspection
-dskill -cxt -i pdkUtils64bit.cxt -d ./output -m 10
+dskill -cxt -i myFunc.cxt -d ./output -m 10
 
 # Decompile a specific function by name
-dskill -cxt -i pdkUtils64bit.cxt -d ./output -n myFunction
+dskill -cxt -i myFunc.cxt -d ./output -n myFunction
 ```
 
 ## Output
